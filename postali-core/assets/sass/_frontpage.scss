@@ -1,0 +1,307 @@
+/**
+ * Template Front Page Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+.page-template-front-page {
+    #hp-banner {
+        padding-top:80px;
+
+        @include respond(tab-land) {
+            padding-top: 50px;
+        }
+        
+        .container {
+            &.wide {
+                @include respond(desktop) {
+                    padding:0 !important;
+                }
+            }
+            
+            .columns {
+                align-items: normal;
+                
+                .column-left {
+                    width: 54%;
+
+                    @include respond(tab-port) {
+                        width:100%;
+                        text-align: center;
+                    }
+
+                    h1,
+                    p.small.green {
+                        color:$green !important;
+                        text-transform: uppercase;
+                        font-size: 17px !important;
+                        letter-spacing: 2px;
+                        font-family: $sans;
+                        font-weight: normal;
+
+                        @include respond(phone) {
+                            font-size: 15px !important;
+                        }
+                    }
+
+                    .banner-headline {
+                        font-family: $sans;
+                        font-weight: 200;
+                        line-height: 120%;
+                        margin-top: 30px;
+
+                        @media screen and (min-width:$desktop-lg) {
+                            font-size: 60px;
+                        }
+
+                        @include respond(desktop-lg) {
+                            font-size: 3.8vw;
+                        }
+
+                        @include respond(tab-port) {
+                            font-size: 36px;
+                        }
+
+                        @include respond(phone) {
+                            font-size: 6.5vw;
+                        }
+                    }
+
+                    .banner-cta {
+                        box-sizing: border-box;
+                        padding: 50px;
+                        background: $white;
+                        margin-top: 40px;
+                        max-width: 800px;
+                        display: flex;
+                        align-items: flex-end;
+
+                        @include respond(tab-land) {
+                            flex-wrap: wrap;
+                        }
+                        
+                        .banner-left {
+                            p {
+                                color:$blk !important;
+                                margin-bottom: 0;
+    
+                                &.small.green {
+                                    margin-bottom: 15px !important;
+                                    color:$green !important;
+                                }
+                            }
+
+                            @include respond(tab-land) {
+                                width:100%;
+                            }
+                        }
+
+                        .banner-right {
+                            width: -webkit-fit-content;
+                            width: -moz-fit-content;
+                            width: fit-content;
+                            margin-left: 60px;
+                            text-align: center;
+
+                            @include respond(tab-land) {
+                                width: 100%;
+                                margin-left: 0;
+                                text-align: left;
+                                margin-top: 30px;
+                            }
+
+                            @include respond(tab-port) {
+                                text-align: center;
+                            }
+
+                            .btn {
+                                white-space: nowrap;
+                            }
+
+                            p {
+                                color:$blk !important;
+                                margin:25px 0 0 !important;
+                            }
+                        }
+                    }
+                }
+                .column-right {
+                    width: 40%;
+                    background-size: cover;
+                    background-position: right;
+
+                    @include respond(tab-port) {
+                        width: 100%;
+                        height: 400px;
+                        background-position: center;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .practice-areas {
+        overflow-x: hidden;
+        padding-top: 0;
+        background: rgb(245,248,247);
+        background: linear-gradient(180deg, rgba(245,248,247,1) 50%, rgba(255,255,255,1) 50%);
+        
+        .container {
+            padding: 0;
+            margin: 0;
+            max-width: 110%;
+            margin-left: -5%;
+            margin-right: -5%;
+
+            p.mobile-show-more {
+                margin: 20px auto 0;
+                text-align: center;
+                display:none;
+
+                @include respond(phone) {
+                    display: block;
+                }
+            }
+
+            @include respond(tab-port) {
+               max-width: 100%;
+               margin:0 40px;
+               padding:0 !important;
+            }
+
+            h3 {
+                text-align: center;
+                margin: 0 30px 40px !important;
+                color:$blk; 
+                font-size: 36px !important;
+                font-family: $sans;
+            }
+
+            .columns {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+
+                @include respond(tab-port) {
+                    flex-wrap: wrap;
+                }
+                
+                @include pa-box;
+            }
+        }
+    }
+
+    @include our-team;
+    @include testimonials-block;
+
+    .testimonials-block {        
+        .container {
+            .column-50  {    
+                &.scroll {
+                    @include respond(phone) {
+                        margin:0 40px;
+                        overflow-y: visible;
+                    }
+    
+                    article {
+                        @include respond(tab-port) {
+                            &:not(:first-of-type) {
+                                display:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #faqs {
+        padding-bottom: 160px;
+
+        @include respond(phone) {
+            padding-bottom: 100px;
+        }
+        
+        .container {
+            .columns {
+                .column-66 {
+                    h2 {
+                        margin-top: 15px !important;
+                    }
+
+                    form.search {
+                        width: 60%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @include respond(phone) {
+                            width: 100%;
+                        }
+
+                        input {
+                            display: flex;
+                            height: 41px;
+                            width: 82%;
+                            padding: 0 0 0px 15px;
+                            border-radius: 0;
+                            border: 1px solid $blk;
+
+                            @include respond(phone) {
+                                width: 70%;
+                            }
+                        }
+
+                        button {
+                            height: 44px;
+                            margin-left: -1px;
+                            width: 18%;
+                            border: none;
+                            background: $green;
+                            color: $white;
+
+                            @include respond(phone) {
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+
+                .column-50 {
+                    width:49.5%;
+
+                    @include respond(tab-land) {
+                        width: 100%;
+                    }
+
+                    .accordions {
+                        margin-bottom: 2%;
+                        -moz-column-break-inside: avoid;
+                             break-inside: avoid;
+    
+                        &_title {
+                            h3 {
+                                color:$green;
+                                font-size: 30px;
+                                font-weight: 300;
+
+                                @include respond(phone) {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .accordions_title {
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

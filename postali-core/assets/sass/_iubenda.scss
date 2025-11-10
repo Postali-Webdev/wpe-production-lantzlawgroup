@@ -1,0 +1,39 @@
+.page-template-page-privacy-iubenda {
+    .body-container {
+        margin-top: 30px;
+    }
+    header .translate {
+        display: none;
+    }
+    #iub-pp-container {
+        h1, h2, h3, h4, h5, p, a, ul li, ol li {
+            color: revert !important;
+            text-decoration: revert;
+        }
+        section {
+            padding: revert;
+            margin: revert;
+        }
+        header {
+            background: revert;
+            width: revert;
+            position: revert;
+            display: block;
+            margin: revert;
+            padding: revert;
+            height: auto;
+            &.main-header {
+                padding: 30px 0;
+                margin-top: 15px;
+                p {
+                    line-height: 1.25em;
+                }
+            }
+        }
+        #in-case-of-issues-card {
+            .btn {
+                color: #ffffff !important;
+            }
+        }
+    }
+}

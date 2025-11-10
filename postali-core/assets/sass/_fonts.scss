@@ -1,0 +1,196 @@
+/**
+ * Web Font Styles, H Styles, Body Text Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+/* Fonts */
+body, h1, h2, h3, h4, h5, h6, p, a, ul {
+    // color: $body-text-color;
+} 
+p, a, ul, ol {
+
+}
+ul li, ol li {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+}
+dl, blockquote, img {
+
+}
+
+a {
+    text-decoration:none;
+    transition:$trans;
+    &:hover {
+        color:$green;
+        text-decoration:none;
+    }
+}
+
+.btn {
+    display:inline-block;
+    padding:15px 35px;
+    text-decoration:none;
+    transition:$trans;
+    font-size: 16px;
+    text-decoration: none !important;
+    &:not(.white) {
+        font-weight: $bold;
+        text-transform: uppercase;
+        letter-spacing: 0.18px;
+    }
+    &:hover {
+        // background-color:$dk-red;
+    }
+    &.white {
+        background: $ltgrey !important;
+        color: $blk !important;
+        font-style: italic;
+        text-decoration: underline !important;
+        padding: 15px 100px 15px 35px;
+        border: solid 1px $blk !important;
+        position: relative;
+        &:before {
+            content: "";
+            height: 13px;
+            width: 20px;
+            background: url('/wp-content/uploads/2024/02/Lantz-Yellow-Triangle.svg') no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -13px;
+            left: -1px;
+        }
+        &:after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: $blk;
+            -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+                    clip-path: polygon(0 0, 0 100%, 100% 50%);
+            position: absolute;
+            right: 60px;
+            top: calc(50% - 3.5px);
+        }
+        &:hover {
+            background: $blk !important;
+            color: $white !important;
+            &:after {
+                background: $white;
+            }
+        }
+    }
+}
+
+p {
+    font-size:16px;
+    line-height: 26px;
+    margin-bottom:30px;
+    margin-top: 0;
+
+    &.small {
+        font-size: 14px !important;
+    }
+
+    &.large {
+        font-size: 22px;
+    }
+
+    &.green {
+        color:$green !important;
+    }
+
+    &.pre-headline {
+        color:$green !important;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: 300;   
+        margin-bottom: 0 !important;
+    }
+    
+    a {
+        font-family: inherit;
+        color:inherit;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: inherit;
+        }
+    }
+}
+
+h2, h3, h4 {
+    line-height: 120%;
+}
+
+h2 {
+    margin: 30px 0 20px !important;
+    display:block;
+    font-size: 50px;
+    color:#0D6E45;
+    
+    @include respond(phone) {
+        font-size: 38px;
+    }
+}
+
+h3 {
+    margin: 30px 0 20px !important;
+    display:block;
+    font-size: 30px;
+    color:#0D6E45;
+    font-family: $sans;
+
+    @include respond(phone) {
+        font-size: 26px;
+    }
+}
+
+h4 {
+    margin: 30px 0 20px !important;
+    display:block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.body-container {
+    ul li, 
+    ul li a,
+    ol li, 
+    ol li a {
+        font-size:16px;
+        line-height: 25px;
+        margin-top: 0;
+        font-family: $sans;
+        color: $blk;
+        margin:0 !important;
+    }
+
+    ul li {
+        &::marker {
+            color: $blk;
+        }
+    }
+
+    h1, h2, h3, h4 {
+        font-weight: 300;
+    }
+
+    ul {
+        margin-bottom:30px;
+
+        li {
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+sup {
+    position: relative;
+    top: -4px;
+}
