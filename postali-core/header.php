@@ -120,9 +120,8 @@ endif; ?>
 			
 			<div id="header-top_right">
 				<div id="header-top_right_menu">
+                    <nav role="navigation">
                     <?php
-
-					
 					$theme_location = 'header-nav';
 					
 					$args = array(
@@ -131,6 +130,7 @@ endif; ?>
 					);
 					wp_nav_menu( $args );
                     ?>	
+                    </nav>
 					<div id="header-top_mobile">
 						<div id="menu-icon" class="toggle-nav">
 							<span class="line line-1"></span>
