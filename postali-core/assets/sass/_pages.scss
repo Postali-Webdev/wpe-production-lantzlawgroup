@@ -726,3 +726,37 @@
         }
     }
 }
+
+.page-template-careers-page {
+    .banner {
+        .banner-cta-box {
+            display: none;
+        }
+    }
+    .columns {
+        &.mobile-reverse {
+            @include respond(tab-port) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    .job-listings {
+        .accordions {
+            margin-bottom: 15px;
+            &_title {
+                padding-right: 30px;
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                }
+            }
+            &_content {
+                padding: 30px 0 0;
+                ul {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

@@ -152,6 +152,13 @@
                 "operator": "==",
                 "value": "page-about.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "careers-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -163,5 +170,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738175982
+    "display_title": "",
+    "modified": 1762807921
 }
