@@ -31,6 +31,7 @@ $global_schema = get_field('global_schema', 'options');
                 <div class="footer-right">
                     <div class="column-33 block menu">
                         <p><strong>QUICK LINKS</strong></p>
+                        <nav role="navigation">
                         <?php
                             $theme_location = 'footer-quick-links';
                             
@@ -40,10 +41,12 @@ $global_schema = get_field('global_schema', 'options');
                             );
                             wp_nav_menu( $args );
                         ?>	
+                        </nav>
                     </div>
                     
                     <div class="column-33 block menu">
                         <p><strong>NAVIGATION</strong></p>
+                        <nav role="navigation">
                         <?php
                             $theme_location = 'footer-nav';
                             
@@ -53,6 +56,7 @@ $global_schema = get_field('global_schema', 'options');
                             );
                             wp_nav_menu( $args );
                         ?>	
+                        </nav>
                     </div>
 
                     <div class="column-33 block address-map">
