@@ -20,7 +20,7 @@ get_header();?>
                 </div>
                 
                     <?php $image = get_field('banner_background_image'); ?>
-                    <div class="column-50 banner-img" style="background-image: url('<?php echo $image; ?>')">
+                    <div class="column-50 banner-img" style="background-image: url('<?php echo $image; ?>.webp')">
                     <div class="banner-cta-box">
                         <p><em><strong>Contact Us Today!</strong></em></p>
                         <div class="spacer-30"></div>
