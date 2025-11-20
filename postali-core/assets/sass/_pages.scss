@@ -725,37 +725,6 @@
             }
         }
     }
-
-    .value {
-        display: flex;
-        gap: 20px;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 15px;
-        box-sizing: border-box;
-        background: none;
-
-        &:nth-of-type(odd) {
-            background: $white;
-        }
-
-        &-image {
-            min-width: 85px;
-        }
-
-        &-copy {
-            p {
-                margin-bottom: 0;
-                
-                .value-title {
-                    color: $green;
-                    display: block;
-                    font-weight: 500;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
 }
 
 .page-template-careers-page {
