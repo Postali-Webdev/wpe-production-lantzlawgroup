@@ -118,31 +118,6 @@ get_header();?>
             </div>
         </div>
     </section>
-
-    <section class="main-content about-top">
-        <div class="container">
-            <div class="columns">
-                <div class="column-33 block">
-                
-                <?php if( have_rows('logos_block') ): ?>
-                <div class="logos-block">
-                <?php while( have_rows('logos_block') ): the_row(); ?>  
-                    <?php 
-                    $image = get_sub_field('logo');
-                    if( !empty( $image ) ): ?>                    
-                    <a href="<?php the_sub_field('link'); ?>" target="blank"> <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" /></a>
-                    <?php endif; ?>
-                <?php endwhile; ?>
-                </div>
-                <?php endif; ?> 
-
-                </div>
-                <div class="column-66 block">
-                    <?php the_field('community_involvement'); ?>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <?php if(get_field('include_awards','options')) : ?>
         <?php get_template_part('block','awards'); ?>
