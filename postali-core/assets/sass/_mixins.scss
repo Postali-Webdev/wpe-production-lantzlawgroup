@@ -919,26 +919,22 @@
                         }
                     }
                     
-                    picture {
-                        height: 100%;
+    
+                    img {
+                        height: 700px;
                         width: 100%;
-        
-                        img {
-                            height: 700px;
-                            width: 100%;
-                            -o-object-fit: cover;
-                               object-fit: cover;
-                            -o-object-position: center;
-                               object-position: center;
+                        -o-object-fit: cover;
+                            object-fit: cover;
+                        -o-object-position: center;
+                            object-position: center;
 
-                            @include respond(tab-port) {
-                                height:500px;
-                            }   
+                        @include respond(tab-port) {
+                            height:500px;
+                        }   
 
-                            @include respond(phone) {
-                                height:380px;
-                            } 
-                        }
+                        @include respond(phone) {
+                            height:380px;
+                        } 
                     }
                 }
     
