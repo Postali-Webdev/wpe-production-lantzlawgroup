@@ -28,7 +28,7 @@
 		wp_enqueue_style( 'child-styles', get_stylesheet_directory_uri() . '/style.css' ); // Enqueue Child theme style sheet (theme info)
 		wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/assets/css/styles.css'); // Enqueue child theme styles.css
 		
-		wp_register_style( 'icomoon', 'https://cdn.icomoon.io/152819/PostaliTier1/style.css?kauul3', array() );
+		wp_register_style( 'icomoon', 'https://cdn.icomoon.io/152819/PostaliTier1/style.css?3p4o9u', array() );
 		wp_enqueue_style('icomoon');
 
 		// Compiled .js using Grunt.js
