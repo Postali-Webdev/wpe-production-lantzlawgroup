@@ -32,6 +32,11 @@ $phone_number = get_field('phone_number','options');
 
                 <?php $image = get_field('banner_image'); ?>
                 <div class="column-right" style="background-image:url('<?php echo esc_url($image['url']); ?>');">
+                    <?php if( get_field('banner_badge') ) : $banner_badge = get_field('banner_badge'); ?>
+                        <div class="banner-badge">
+                            <?php echo wp_get_attachment_image( $banner_badge['ID'], 'full' ); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

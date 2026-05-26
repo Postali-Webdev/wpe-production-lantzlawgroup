@@ -15,5 +15,12 @@
     "chalk": "^5.2.0",
     "each-async": "^2.0.0",
     "indent-string": "^5.0.0"
-  }
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
