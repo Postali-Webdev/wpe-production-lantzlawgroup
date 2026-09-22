@@ -40,15 +40,13 @@ $directions_url = get_field('driving_directions','options');
     <section class="main-content">
         <div class="container">
             <div class="columns">
-                <div class="column-50">
-                    <h3>Online Form</h3>
-                    <?php the_content(); ?>
-                </div>
-                <div class="column-50 sidebar-block block">
+                <div class="column-50 block">
                     <h3>Our Office</h3>
                     <p><?php echo $address; ?></p>
                     <p class="sidebar-more"><a href="<?php echo $directions_url; ?>" title="Get Directions" target="blank">Directions</a></p>
                     <iframe src="<?php echo $map_url; ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="column-50 sidebar-block block">
                     <?php 
                     $image = get_field('additional_sidebar_image');
                     if( !empty( $image ) ): ?>

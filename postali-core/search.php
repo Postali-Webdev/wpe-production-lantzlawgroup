@@ -31,7 +31,7 @@ get_header(); ?>
                         <div class="spacer-30"></div>
                         <a href="#" class="btn"><?php the_field('phone_number','options'); ?></a>
                         <div class="spacer-30"></div>
-                        <p class="small">or use our <a href="/contact-us/">online form</a></p>
+                        
                     </div>
                 </div>            
             </div>

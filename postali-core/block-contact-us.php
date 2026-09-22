@@ -7,7 +7,6 @@
                     <?php the_field('contact_block_copy','options'); ?>
                     <div class="contact-block">
                         <a href="tel:<?php the_field('phone_number','options'); ?>" class="btn"><?php the_field('phone_number','options'); ?></a>
-                        <p>or use our <a href="/contact-us/">online form</a></p>
                     </div>
                 </div>
                 <?php $image = get_field('contact_block_photo','options'); ?>

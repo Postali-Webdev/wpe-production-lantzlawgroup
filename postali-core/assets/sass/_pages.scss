@@ -12,6 +12,23 @@
                 color:$blk;
                 margin-top: 0 !important;
             }
+
+            .container {
+                .columns {
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+    .column-50 {
+        iframe {
+            height:250px;
+            max-width: 525px;
+
+            @include respond(desktop) {
+                max-width: 100%;
+            }
         }
     }
     
@@ -22,15 +39,6 @@
             a {
                 color:$green;
                 font-weight: bold;
-            }
-        }
-
-        iframe {
-            height:250px;
-            max-width: 525px;
-
-            @include respond(desktop) {
-                max-width: 100%;
             }
         }
     }

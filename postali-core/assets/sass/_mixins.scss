@@ -734,8 +734,13 @@
         display: flex;
         height: 70px;
         align-items: center;
+        justify-content: space-between;
         transition: $trans;
         position: relative;
+
+        * {
+            color:$white;
+        }
 
         @include respond(phone) {
             padding:20px 50px;
@@ -746,21 +751,22 @@
             background:#082e1e;
         }
 
-        &::after {
-            content: "\e90a";
-            font-family: $icomoon;
-            position: absolute;
-            right: 25px;
-            color: $white;
-            font-size: 24px;
-            font-weight: normal;
-        }
-
         p {
             color: $white;
             margin-bottom: 0;
             letter-spacing: 2px;
             text-decoration: underline;
+        }
+
+        .phone-block {
+            display: flex;
+            gap: 10px;
+            font-size: 15px;
+            align-items: center;
+
+            span {
+                font-size: 18px;
+            }
         }
     }
 }

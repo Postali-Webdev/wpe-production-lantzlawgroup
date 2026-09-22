@@ -30,7 +30,7 @@ get_header();?>
                         <div class="spacer-30"></div>
                         <a href="tel:<?php the_field('phone_number','options'); ?>" class="btn"><?php the_field('phone_number','options'); ?></a>
                         <div class="spacer-30"></div>
-                        <p class="small">or use our <a href="/contact-us/">online form</a></p>
+                        
                     </div>
                 </div>            
             </div>
@@ -129,10 +129,9 @@ get_header();?>
                             <p><?php the_field('testimonial_author','options'); ?></p>
                         </div>
                     </div>
-                    <a class="contact" href="/contact-us">
-                        <p class="large">Contact Lantz Law Group Today!</p>
+                    <a class="contact" href="tel:<?php the_field('phone_number','options'); ?>">
+                        <p class="large">Contact Lantz Law Group Today!</p><div class="phone-block"><span class="icon-phone-icon"></span> <?php the_field('phone_number','options'); ?></div>
                     </a>
-                    
                 </div>
             </div>
         </div>

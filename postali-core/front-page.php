@@ -25,7 +25,6 @@ $phone_number = get_field('phone_number','options');
                         </div>
                         <div class="banner-right">
                             <a href="tel:<?php the_field('phone_number','options'); ?>" class="btn"><?php the_field('phone_number','options'); ?></a>
-                            <p>or use our <a href="/contact-us/">online form</a></p>
                         </div>
                     </div>
                 </div>
@@ -149,8 +148,8 @@ $phone_number = get_field('phone_number','options');
                 <?php endwhile; wp_reset_postdata(); ?>
                 </div>
             </div>
-            <a class="contact" href="/contact-us">
-                <p class="large">Contact Lantz Law Group Today!</p>
+            <a class="contact" href="tel:<?php the_field('phone_number','options'); ?>">
+                <p class="large">Contact Lantz Law Group Today!</p><div class="phone-block"><span class="icon-phone-icon"></span> <?php the_field('phone_number','options'); ?></div>
             </a>
         </div>
     </section>
