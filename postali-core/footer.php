@@ -128,7 +128,6 @@ jQuery(document).ready(function(){
 });
 </script>
 
-<script type="text/javascript" src="//cdn.callrail.com/companies/988863866/42b5736c43350ee8e8a0/12/swap.js"></script> 
 <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://eu.acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init(); }; h.appendChild(s); })(); </script> 
 
 <?php wp_footer(); ?>
